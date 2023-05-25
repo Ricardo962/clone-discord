@@ -1,0 +1,252 @@
+@charset "UTF-8";
+:root{
+    --font-principal:'Luckiest Guy', cursiva;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 60%;
+}
+a{
+    text-decoration: none;
+}
+html{
+    font-size: 60%;
+}
+img{
+    max-width: 100%;
+}
+header#cabecalho{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    background: url(/assets/Header\ Background.png) no-repeat center ;
+    background-size: cover;
+    height: 500px;
+    padding: 0 20px;
+}
+header#cabecalho > h1{
+    font-size: 3.2rem;
+    font-family: var(--font-principal);
+    font-weight: 400;
+    line-height: 35px;
+    color: white;
+    padding-top: 50px; 
+}
+header#cabecalho > p{
+    line-height: 21px;
+    font-family: sans-serif;
+    color: white;
+    font-size: 16px;
+}
+header#cabecalho div.cabecalho-botoes{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+header#cabecalho div.botao{
+    background-color:white;
+    min-width: 27rem;
+    height: 54px;
+    border-radius: 28px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header#cabecalho div.botao > a {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+header#cabecalho div.botao > a > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+}
+header#cabecalho div#black{
+    background-color: black;
+}
+header#cabecalho div#black > a > p{
+    color:white;
+}
+header#cabecalho div.botao:hover{
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.39);
+}
+
+div.secao-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+div.secao-texto > h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;  
+    width: 100%;
+}
+div.secao-texto > p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+section#secao-01{                           
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}                                                                                    
+section#secao-02{                 
+    background-color: rgba(246, 246, 246, 1);
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}                                
+section#secao-03{                                     
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}                                                        
+section#secao-04{                 
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+section#secao-04 > h1{
+    font-size: 2.5rem;
+    font-family: var(--font-principal);
+    font-weight: 400;
+}
+section#secao-04 > p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section#secao-04 > img{
+    margin: 0 auto;
+}                                  
+footer#rodapé{                                         
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(35, 39, 42, 1);
+    height: 140px;
+}   
+
+@media screen and (min-width: 550px) and (max-width: 768px){
+    html{
+        font-size: 65%;
+    }
+    header#cabecalho{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    header#cabecalho > p{
+        text-align: justify;
+        width: 520px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width:1024px){
+    html{
+        font-size: 75%;
+    }
+    header#cabecalho{
+        align-items: center;
+        height: 450px;
+    }
+    header#cabecalho > p {
+        width: 700px;
+    }
+    section img{
+        margin: 0 auto;
+        width: 65%;
+    }
+    section#secao-01{
+        flex-direction: row;
+    }
+    section#secao-02{
+        flex-direction: row-reverse;
+    }
+    section#secao-03{
+        flex-direction: row;
+    }
+    section#secao-04{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1025px){
+    html{
+        font-size: 100%;
+    }
+    header#cabecalho{
+        align-items: center;
+        height: 459px;
+        padding-top: 30px;
+    }
+    header#cabecalho > p{
+        width: 757px;
+        text-align: center;
+        line-height: 30px;
+    }
+    header#cabecalho div.cabecalho-botoes{
+        display: flex;
+        flex-direction: row;
+    }
+    header#cabecalho div.cabecalho-botoes div#black.botao{
+        width: 281px;
+        height: 46px;
+    }
+    header#cabecalho div.cabecalho-botoes div.botao{
+        width: 206px;
+        height: 46px;
+    }
+    div.secao-texto{
+        justify-content: center;
+        width: 400px;
+    }
+    div.secao-texto > p{
+        line-height: 24px;
+    }
+    section#secao-01{
+        margin-top: 100px;
+        height: 70vh;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+    section#secao-02{
+        height: 80vh;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin: auto;
+        margin-top: 50px;
+    }
+    section#secao-03{
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 80px;
+    }
+    section#secao-04{
+        margin-top: 80px;
+        align-items: center;
+    }
+    section#secao-04 > h1{
+        text-align: center;
+    }
+    section#secao-04 > p{
+        width: 800px;
+    }
+}
